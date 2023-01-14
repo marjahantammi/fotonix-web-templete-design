@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+// common css
+
+$color1: #17d2d9;
+
+.fz-normal {
+  font-size: 16px;
+}
+
+.fz-1 {
+  font-size: 33px;
+}
+
+.fz-2 {
+  font-size: 50px;
+}
+
+.fz-3 {
+  font-size: 24px;
+}
+
+.txt-cyan {
+  color: $color1;
+}
+
+.btn-cyan {
+  background: $color1;
+}
+
+.bg-cyan {
+  background: $color1;
+}
+
+@mixin padding-tb($unit) {
+  padding-top: $unit;
+  padding-bottom: $unit;
+}
+
+// page css
+
+.wrapper {
+  position: relative;
+  height: 100%;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10001;
+}
+.banner {
+  background: url("images/mt-0935-home-header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  @include padding-tb(322px);
+}
+
+.cammera {
+  img {
+    transition: all 0.3s ease-in-out;
+  }
+
+  img:hover {
+    outline: 10px solid $color1;
+  }
+}
+
+.gallery {
+  img {
+    height: 320px;
+    border: 1px solid #ffffff;
+  }
+}

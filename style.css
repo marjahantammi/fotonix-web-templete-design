@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.fz-normal {
+  font-size: 16px;
+}
+
+.fz-1 {
+  font-size: 33px;
+}
+
+.fz-2 {
+  font-size: 50px;
+}
+
+.fz-3 {
+  font-size: 24px;
+}
+
+.txt-cyan {
+  color: #17d2d9;
+}
+
+.btn-cyan {
+  background: #17d2d9;
+}
+
+.bg-cyan {
+  background: #17d2d9;
+}
+
+.wrapper {
+  position: relative;
+  height: 100%;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10001;
+}
+
+.banner {
+  background: url("images/mt-0935-home-header-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 322px;
+  padding-bottom: 322px;
+}
+
+.cammera img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.cammera img:hover {
+  outline: 10px solid #17d2d9;
+}
+
+.gallery img {
+  height: 320px;
+  border: 1px solid #ffffff;
+}
+/*# sourceMappingURL=style.css.map */
